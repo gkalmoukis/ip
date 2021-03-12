@@ -2,7 +2,7 @@ import React from 'react'
 
 const Ip = ({ ip }) => {
     return (
-        <div>{ip}</div>
+        <span>{ip}</span>
     )
 };
 

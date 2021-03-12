@@ -3,6 +3,8 @@ import Ip from './components/ip';
 import City from './components/city';
 import Region from './components/region';
 import Country from './components/country';
+import "./App.css";
+
 class App extends Component {
   state = {
     ip: "-",
@@ -27,11 +29,19 @@ class App extends Component {
 
   render () {
     return (
-      <div class="d-flex justify-content-center">
-        <Ip ip={this.state.ip} />
-        <City city={this.state.city} />
-        <Region region={this.state.regionName} />
-        <Country country={this.state.countryName} />
+      <div className="container h-100">
+        <div className="justify-content-center align-items-center">
+          <div className="card text-center my-auto">
+            <div className="card-body">
+              <h5 className="card-title"><Ip ip={this.state.ip} /></h5>
+              <p className="card-text">
+                <City city={this.state.city} />
+                <Region region={this.state.regionName} />
+                <Country country={this.state.countryName} />  
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
