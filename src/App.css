@@ -1,7 +1,24 @@
 html, body {
   height: 100%;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.text-large {
+  font-size: 5rem;
+  letter-spacing: 1px;
+}
+
+.text-large:hover {
+  color: #0373fc;
 }
 
 span {
   margin-left: 1rem;
 }
+
+span:hover {
+  color: #0373fc;
+}
+
+
+
